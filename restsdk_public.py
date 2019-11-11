@@ -1,5 +1,4 @@
 ##Intended for python3.6 on linux, probably won't work on Windows
-##Released into the public domain
 ##This software is distributed without any warranty. It will probably brick your computer.
 #DO NOT ADD SLASHES TO END OF DIRECTORIES
 db='/restsdk/data/db/index.db' #where the file DB is stored example: /data/db/index.db
@@ -103,3 +102,6 @@ for root,dirs,files in os.walk(filedir): #find all files in original directory s
                 copyfile(fullpath,newpath)
             except:
                 print('Error copying file ' + fullpath + ' to ' + newpath)
+print("Did this script help you recover your data? Or make you some money recovering somebody else's data?")
+print("Consider sending us some bitcoin as a way of saying thanks!")
+print("1DqSLNR8kTgwq5rvveUFDSbYQnJp9D5gfR")

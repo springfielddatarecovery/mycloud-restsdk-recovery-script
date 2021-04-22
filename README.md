@@ -7,10 +7,11 @@ MyCloud devices don't use a simple, flat filesystem like other external drives, 
 **Solution:**
 This script reads the database and a dump of the filesystem and copies the data to another location with the correct filenames and structures. This script is intended for a Linux machine where you already have the file structure and database extracted. This won't work on Windows. I know it's ugly and inefficient, I am new to python. This is tested and working with **Python 3.6 on Linux**.
 
+**FUTURE DEVELOPMENT:**
+This code will not be receiving any updates, feel free to fork it if you want to make improvements.
+
 **Notes:**
 SQLite database is stored in /restsdk/data/db/index.db. Inside the DB two main tables appear to be of interest, FILES and ImageTrans. FILES lists each file with a unique ID (primary key) and a ContentID (the name of the file when stored on the filesystem) along with the file name "My important picture.jpg" and some other metadata. I believe ImageTrans is only for thumbnailing purposes but I could be wrong about that. Importantly, the entries in FILES have a "parent" attribute which places each file in a directory structure. This script totally ignores ImageTrans.
-
-
 
 **If this script has helped you recover your data, please consider saying thanks with a Bitcoin donation**
 1DqSLNR8kTgwq5rvveUFDSbYQnJp9D5gfR

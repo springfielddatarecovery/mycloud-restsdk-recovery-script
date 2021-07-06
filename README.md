@@ -9,8 +9,11 @@ This script reads the database and a dump of the filesystem and copies the data 
 
 **If this script has helped you recover your data, please consider saying thanks with a crypto/Bitcoin donation**
 Bitcoin: 1DqSLNR8kTgwq5rvveUFDSbYQnJp9D5gfR
+
 ETH: 0x9e765052283Ce6521E40069Ac52ffA5B277bD8AB
+
 Zcash: t1RetUQktuUBL2kbX72taERb6QcuAiDsvC4
+
 Don't have any crypto? Buy some at [Coinbase](https://www.coinbase.com/join/calltheninja)
 
 **FUTURE DEVELOPMENT:**

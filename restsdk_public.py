@@ -102,6 +102,9 @@ for root,dirs,files in os.walk(filedir): #find all files in original directory s
                 copyfile(fullpath,newpath)
             except:
                 print('Error copying file ' + fullpath + ' to ' + newpath)
-print("Did this script help you recover your data? Or make you some money recovering somebody else's data?")
-print("Consider sending us some bitcoin as a way of saying thanks!")
-print("1DqSLNR8kTgwq5rvveUFDSbYQnJp9D5gfR")
+print("Did this script help you recover your data? Save you a few hundred bucks? Or make you some money recovering somebody else's data?")
+print("Consider sending us some bitcoin/crypto as a way of saying thanks!")
+print("Bitcoin: 1DqSLNR8kTgwq5rvveUFDSbYQnJp9D5gfR")
+print("ETH: 0x9e765052283Ce6521E40069Ac52ffA5B277bD8AB")
+print("Zcash: t1RetUQktuUBL2kbX72taERb6QcuAiDsvC4")
+

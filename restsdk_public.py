@@ -44,9 +44,12 @@ def idToPath2(fileID):
     return path
 
 def filenameToID(filename):
-    #turn a filename from filesystem into a db id
+    #turn a filename from filesystem into a db id | Some (newer?) versions of MyCloud Home have changed their DB entries so that contentID no longer is the filename
     for keys,values in fileDIC.items():
         if values['contentID']==filename:
+            #print('Found filename ' + filename + ' in DBkey ' + str(keys) +' with name ' + values['Name'])
+            return str(keys)
+        else values['Name']==filename:
             #print('Found filename ' + filename + ' in DBkey ' + str(keys) +' with name ' + values['Name'])
             return str(keys)
     #print('Unable to find filename' + filename)

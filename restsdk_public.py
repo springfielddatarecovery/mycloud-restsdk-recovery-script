@@ -49,7 +49,7 @@ def filenameToID(filename):
         if values['contentID']==filename:
             #print('Found filename ' + filename + ' in DBkey ' + str(keys) +' with name ' + values['Name'])
             return str(keys)
-        else values['Name']==filename:
+        elif values['Name']==filename:
             #print('Found filename ' + filename + ' in DBkey ' + str(keys) +' with name ' + values['Name'])
             return str(keys)
     #print('Unable to find filename' + filename)

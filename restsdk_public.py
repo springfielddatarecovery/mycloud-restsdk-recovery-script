@@ -97,6 +97,7 @@ for root,dirs,files in os.walk(filedir): #find all files in original directory s
             for paths in skipnames:
                 newpath=fullpath.replace(paths,'')
             newpath=dumpdir+newpath
+            newpath=newpath.replace('|', '-')
             fullpath=str(os.path.join(root,file))
             #print('Copying ' + fullpath + ' to ' + newpath,end="\r")
             print('Copying ' + newpath)
